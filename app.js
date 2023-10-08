@@ -1,5 +1,5 @@
-const wrapper = document.querySelector(".sliderWrapper");
-const menuItems = document.querySelectorAll(".menuItem");
+const wrapper = document.querySelector(".slider-wrapper");
+const menuItems = document.querySelectorAll(".menu-item");
 
 const products = [
   {
@@ -41,10 +41,10 @@ const products = [
 
 let choosenProduct = products[0];
 
-const currentProductImg = document.querySelector(".productImg");
-const currentProductTitle = document.querySelector(".productTitle");
-const currentProductPrice = document.querySelector(".productPrice");
-const currentProductDesc = document.querySelector(".productDesc");
+const currentProductImg = document.querySelector(".product-img");
+const currentProductTitle = document.querySelector(".product-title");
+const currentProductPrice = document.querySelector(".product-price");
+const currentProductDesc = document.querySelector(".product-desc");
 
 
 menuItems.forEach((item, index) => {
@@ -64,7 +64,7 @@ menuItems.forEach((item, index) => {
 });
 
 
-const productButton = document.querySelector(".productButton");
+const productButton = document.querySelector(".product-button");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
