@@ -4,10 +4,10 @@ const menuItems = document.querySelectorAll(".menu-item");
 const products = [
   {
     id: 1,
-    title: "Salad with Chicken",
-    price: 11.95,
-    img: "./img/salad/salad_with_chicken.png",
-    desc: "GREEN SALAD MIX TOPPED WITH CRISPY CHICKEN FILLETS AND CHERRY TOMATOES",
+    title: "Salad Greek Style",
+    price: 9.95,
+    img: "./img/salad/Salad_with_olives.png",
+    desc: "TOMATOES, CUCUMBERS, FRESH PEPPERS, RED ONION, BLACK OLIVES, TOSSED IN EXTRA VIRGIN OLIVE OIL WITH OREGANO AND TOPPED WITH FETA CHEESE",
   },
   {
     id: 2,
@@ -25,10 +25,10 @@ const products = [
   },
   {
     id: 4,
-    title: "Salad Greek Style",
-    price: 9.95,
-    img: "./img/salad/Salad_with_olives.png",
-    desc: "TOMATOES, CUCUMBERS, FRESH PEPPERS, RED ONION, BLACK OLIVES, TOSSED IN EXTRA VIRGIN OLIVE OIL WITH OREGANO AND TOPPED WITH FETA CHEESE",
+    title: "Salad with Chicken",
+    price: 11.95,
+    img: "./img/salad/salad_with_chicken.png",
+    desc: "GREEN SALAD MIX TOPPED WITH CRISPY CHICKEN FILLETS AND CHERRY TOMATOES",
   },
   {
     id: 5,

@@ -1,0 +1,6 @@
+.success-msg {
+    color: rgba(66, 210, 33, 0.81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
