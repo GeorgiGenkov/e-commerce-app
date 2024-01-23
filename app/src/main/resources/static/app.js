@@ -6,35 +6,35 @@ const products = [
     id: 1,
     title: "Salad Greek Style",
     price: 9.95,
-    img: "./img/salad/Salad_with_olives.png",
+    img: "/assets/img/salad/Salad_with_olives.png",
     desc: "TOMATOES, CUCUMBERS, FRESH PEPPERS, RED ONION, BLACK OLIVES, TOSSED IN EXTRA VIRGIN OLIVE OIL WITH OREGANO AND TOPPED WITH FETA CHEESE",
   },
   {
     id: 2,
     title: "Salad with Salmon",
     price: 14.95,
-    img: "./img/salad/salad_with_fish.png",
+    img: "/assets/img/salad/salad_with_fish.png",
     desc: "FRESH SALMON FILLETS, GREEN SALAD MIX WITH CARROTS AND CHERRY TOMATOES",
   },
   {
     id: 3,
     title: "Salad with Fruit",
     price: 10.95,
-    img: "./img/salad/salad_with_fruit.png",
+    img: "/assets/img/salad/salad_with_fruit.png",
     desc: "STRAWBERRIES, PINEAPPLE, KIWI AND BLUEBERRIES",
   },
   {
     id: 4,
     title: "Salad with Chicken",
     price: 11.95,
-    img: "./img/salad/salad_with_chicken.png",
+    img: "/assets/img/salad/salad_with_chicken.png",
     desc: "GREEN SALAD MIX TOPPED WITH CRISPY CHICKEN FILLETS AND CHERRY TOMATOES",
   },
   {
     id: 5,
     title: "Salad with Spinach",
     price: 9.95,
-    img: "./img/salad/salad_with_spinach.png",
+    img: "/assets/img/salad/salad_with_spinach.png",
     desc: "SPINACH, TOMATOES, PEPPERS, RED ONION AND BLACK OLIVES",
   },
 ];
@@ -64,11 +64,19 @@ menuItems.forEach((item, index) => {
 });
 
 
-const productButton = document.querySelector(".product-button");
+const buyButton = document.querySelector(".buy-button");
+const paymentButton = document.querySelector(".payment-button");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
-productButton.addEventListener("click", () => {
+buyButton.addEventListener("click", () => {
+  // payment.style.display = "flex";
+  addToCart(choosenProduct.id);
+  // addToCart(2);
+  displayCart();
+});
+
+paymentButton.addEventListener("click", () => {
   payment.style.display = "flex";
 });
 
@@ -107,38 +115,39 @@ window.onclick = function(event) {
 
 
 
-const categories = [...new Set(products.map((item)=>
-  {return item}))]
-  let i=0;
-document.getElementById('cart-root').innerHTML = categories.map((item)=>
-{
-  var {img, title, price} = item;
-  return(
-      `<div class='cart-box'>
-          <div class='img-box'>
-              <img class='cart-images' src=${img}></img>
-          </div>
-      <div class='cart-bottom'>
-      <p>${title}</p>
-      <h2>$ ${price}.00</h2>`+
-      "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
-      `</div>
-      </div>`
-  )
-}).join('')
+// const categories = [...new Set(products.map((item)=> {return item}))]
 
-var cart =[];
+// let i=0;
+// document.getElementById('cart-root').innerHTML = categories.map((item)=>
+// {
+//   var {title, price, img, desc} = item;
+//   return(
+//       `<div class='cart-box'>
+//           <div class='img-box'>
+//               <img class='cart-images' src=${img}></img>
+//           </div>
+//       <div class='cart-bottom'>
+//       <p>${title}</p>
+//       <h2>$ ${price}</h2>`+
+//       "<button onclick='addToCart("+(i++)+")'>Add to cart</button>"+
+//       `</div>
+//       </div>`
+//   )
+// }).join('')
 
-function addtocart(a){
-  cart.push({...categories[a]});
-  displaycart();
+var cart = new Array();
+
+function addToCart(a) {
+  // cart.push({...categories[a]});
+  cart.push({...products[a - 1]});
+  displayCart();
 }
-function delElement(a){
+function delElement(a) {
   cart.splice(a, 1);
-  displaycart();
+  displayCart();
 }
 
-function displaycart(){
+function displayCart() {
   let j = 0, total=0;
   document.getElementById("count").innerHTML=cart.length;
   if(cart.length==0){
@@ -148,20 +157,18 @@ function displaycart(){
   else{
       document.getElementById("cartItem").innerHTML = cart.map((items)=>
       {
-          var {img, title, price} = items;
+          var {title, price, img, desc} = items;
           total=total+price;
-          document.getElementById("total").innerHTML = "$ "+total+".00";
+          document.getElementById("total").innerHTML = "$ "+total.toFixed(2);
           return(
               `<div class='cart-item'>
               <div class='row-img'>
-                  <img class='rowimg' src=${img}>
+                  <img class='rowimg' src =..${img} th:src=@{${img}}>
               </div>
               <p style='font-size:12px;'>${title}</p>
-              <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+              <h2 style='font-size: 15px;'>$ ${price}</h2>`+
               "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
           );
       }).join('');
-  }
-
-  
+  } 
 }
