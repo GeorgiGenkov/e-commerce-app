@@ -70,9 +70,7 @@ const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
 buyButton.addEventListener("click", () => {
-  // payment.style.display = "flex";
   addToCart(choosenProduct.id);
-  // addToCart(2);
   displayCart();
 });
 
@@ -114,31 +112,9 @@ window.onclick = function(event) {
 }
 
 
-
-// const categories = [...new Set(products.map((item)=> {return item}))]
-
-// let i=0;
-// document.getElementById('cart-root').innerHTML = categories.map((item)=>
-// {
-//   var {title, price, img, desc} = item;
-//   return(
-//       `<div class='cart-box'>
-//           <div class='img-box'>
-//               <img class='cart-images' src=${img}></img>
-//           </div>
-//       <div class='cart-bottom'>
-//       <p>${title}</p>
-//       <h2>$ ${price}</h2>`+
-//       "<button onclick='addToCart("+(i++)+")'>Add to cart</button>"+
-//       `</div>
-//       </div>`
-//   )
-// }).join('')
-
 var cart = new Array();
 
 function addToCart(a) {
-  // cart.push({...categories[a]});
   cart.push({...products[a - 1]});
   displayCart();
 }

@@ -32,13 +32,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="username">
                     <sec:authorize access="hasAnyRole('USER_ROLE')">
                         Welcome, <span sec:authentication="principal.username"> User</span>
-                    </sec:authorize>
-                    
+                    </sec:authorize>                   
                 </div>
-                <!-- <div class="user-avatar">
-                    <img src="../static/assets/img/user_avatar.png" th:src="@{/assets/img/user_avatar.png}" alt=""
-                        class="avatar">
-                </div> -->
                 <div class="cart">
                     <button class="cart-button" id="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -51,10 +46,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
             </div>
 
             <div class="nav-item"  sec:authorize="!isAuthenticated()">
-                <!-- <div class="user-avatar">
-                    <img src="../static/assets/img/user_avatar.png" th:src="@{/assets/img/user_avatar.png}" alt=""
-                        class="avatar">
-                </div> -->
                 <div class="cart">
                     <button class="cart-button" id="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -82,10 +73,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="slider-bg"></div>
                 <h1 class="slider-title">SALAD</br> GREEK</br> STYLE</h1>
                 <h2 class="slider-price">$9.95</h2>
-                <!-- <button class="buy-button">ADD TO CART!</button>
-                <a href="#product">
-                    <button class="ingredients-button">INGREDIENTS</button>
-                </a> -->
             </div>
             <div class="slider-item">
                 <img src="../static/assets/img/salad/salad_with_fish.png"
@@ -93,10 +80,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="slider-bg"></div>
                 <h1 class="slider-title">SALAD</br> WITH</br> SALMON</h1>
                 <h2 class="slider-price">$14.95</h2>
-                <!-- <button class="buy-button">ADD TO CART!</button>
-                <a href="#product">
-                    <button class="ingredients-button">INGREDIENTS</button>
-                </a> -->
             </div>
             <div class="slider-item">
                 <img src="../static/assets/img/salad/salad_with_fruit.png"
@@ -104,10 +87,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="slider-bg"></div>
                 <h1 class="slider-title">SALAD</br> WITH</br> FRUIT</h1>
                 <h2 class="slider-price">$10.95</h2>
-                <!-- <button class="buy-button">ADD TO CART!</button>
-                <a href="#product">
-                    <button class="ingredients-button">INGREDIENTS</button>
-                </a> -->
             </div>
             <div class="slider-item">
                 <img src="../static/assets/img/salad/salad_with_chicken.png"
@@ -115,10 +94,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="slider-bg"></div>
                 <h1 class="slider-title"> SALAD</br> WITH</br> CHICKEN</h1>
                 <h2 class="slider-price">$11.95</h2>
-                <!-- <button class="buy-button">ADD TO CART!</button>
-                <a href="#product">
-                    <button class="ingredients-button">INGREDIENTS</button>
-                </a> -->
             </div>
             <div class="slider-item">
                 <img src="../static/assets/img/salad/salad_with_spinach.png"
@@ -126,10 +101,6 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <div class="slider-bg"></div>
                 <h1 class="slider-title">SALAD</br> WITH</br> SPINACH</h1>
                 <h2 class="slider-price">$9.95</h2>
-                <!-- <button class="buy-button">ADD TO CART!</button>
-                <a href="#product">
-                    <button class="ingredients-button">INGREDIENTS</button>
-                </a> -->
             </div>
         </div>
         <button class="buy-button">ADD TO CART!</button>

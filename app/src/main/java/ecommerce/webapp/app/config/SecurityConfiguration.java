@@ -46,7 +46,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             "/assets/**",
             "/h2-console/**"
         ).permitAll()
-        
         .anyRequest().authenticated()
         .and()
         .formLogin()

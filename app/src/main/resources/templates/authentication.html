@@ -38,27 +38,6 @@
 
           <form class="sign-in-form">
             <iframe class="spring-login" id="spring-login" src="http://localhost:8080/login"></iframe>
-          <!-- <form th:action="@{/}" method="post" class="sign-in-form">
-
-            <div th:if="${param.error}">
-              <div class="alert-danger">Invalid username or password.</div>
-            </div>
-
-            <div th:if="${param.logout}">
-              <div class="alert-info">You have been logged out.</div>
-            </div>
-
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="text" id="email" name="email" placeholder="Email" autofocus="autofocus"/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="Password"/>
-            </div>
-            <input type="submit" value="Login" class="btn solid" />
-          </form> -->
           </form>
 
           <form th:action="@{/authentication}" method="post" th:object="${user}" class="sign-up-form">
