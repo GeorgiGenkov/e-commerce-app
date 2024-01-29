@@ -16,6 +16,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav id="nav">
         <div class="nav-top">
             <div class="nav-item">
@@ -65,6 +66,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
             <h4 class="menu-item">WITH SPINACH</h4>
         </div>
     </nav>
+
+    <!-- Salads/menu slides -->
     <div class="slider">
         <div class="slider-wrapper">
             <div class="slider-item">
@@ -111,6 +114,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
         </div>
     </div>
 
+    <!-- Shopping cart -->
     <div class="cart-container" id="cart-container">
         <div id="card-root"></div>
         <div class="cart-bar">
@@ -130,6 +134,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
         </div>
     </div>
 
+    <!-- Payment and personal information/delivery address -->
     <div class="payment">
         <h1 class="pay-title">Personal Information</h1>
         <label>Name and Surname</label>
@@ -155,6 +160,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
         <span class="close">X</span>
     </div>
 
+    <!-- Features -->
     <div class="features">
         <div class="feature">
             <img src="../static/assets/img/shipping.png" th:src="@{/assets/img/shipping.png}" alt=""
@@ -180,6 +186,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
         </div>
     </div>
 
+    <!-- Ingredients -->
     <div class="product" id="product">
         <img src="../static/assets/img/salad/Salad_with_olives.png" th:src="@{/assets/img/salad/Salad_with_olives.png}"
             alt="" class="product-img">
@@ -192,8 +199,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <button class="product-button">MENU</button>
             </a>
         </div>
-
     </div>
+
+    <!-- Gallery -->
     <div class="gallery">
         <div class="gallery-item">
             <h1 class="gallery-title">Delicious,</h1>
@@ -229,6 +237,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 class="ns-img">
         </div>
     </div>
+
+    <!-- Footer bar -->
     <footer>
         <div class="footer-left">
             <div class="footer-menu">

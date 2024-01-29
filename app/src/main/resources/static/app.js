@@ -1,6 +1,7 @@
 const wrapper = document.querySelector(".slider-wrapper");
 const menuItems = document.querySelectorAll(".menu-item");
 
+// Products' information
 const products = [
   {
     id: 1,
@@ -49,13 +50,13 @@ const currentProductDesc = document.querySelector(".product-desc");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
-    //change the current slide
+    // Change the current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-    //change the choosen product
+    // Change the choosen product
     choosenProduct = products[index];
 
-    //change texts of currentProduct
+    // Change texts of currentProduct
     currentProductTitle.textContent = choosenProduct.title;
     currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.img;
@@ -69,15 +70,18 @@ const paymentButton = document.querySelector(".payment-button");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
+// Add product to the cart
 buyButton.addEventListener("click", () => {
   addToCart(choosenProduct.id);
   displayCart();
 });
 
+// Display the payment form
 paymentButton.addEventListener("click", () => {
   payment.style.display = "flex";
 });
 
+// Close the payment form
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
@@ -123,6 +127,7 @@ function delElement(a) {
   displayCart();
 }
 
+// Display the cart
 function displayCart() {
   let j = 0, total=0;
   document.getElementById("count").innerHTML=cart.length;

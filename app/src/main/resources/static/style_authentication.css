@@ -261,7 +261,7 @@ form.sign-in-form {
 }
 
 
-/* ANIMATION */
+/* Animation: */
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
@@ -309,6 +309,8 @@ form.sign-in-form {
   background-color: #d1ecf1;
   border-color: #bee5eb;
 }
+
+/* Media: */
 
 @media (max-width: 900px) {
   .container {

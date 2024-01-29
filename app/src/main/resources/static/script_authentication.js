@@ -3,6 +3,7 @@ const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
 const iframe = document.getElementById("spring-login");
 
+// Switching animation between sign in and sign up forms
 sign_up_btn.addEventListener("click", () => {
   container.classList.add("sign-up-mode");
 });
@@ -11,6 +12,7 @@ sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
 
+// Adding additional CSS to default Spring Security Login form to be in tact with the web design
 iframe.onload = function () {
   if (iframe.contentWindow.location.href.indexOf("/login") > -1) {
 
