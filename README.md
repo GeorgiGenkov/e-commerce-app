@@ -3,7 +3,7 @@ Responsive web application for food purchase and delivery with an option for acc
 
 ## Link
 Link to the web application:
-[Link text](https://spring-boot-five-salads.onrender.com/)
+[https://spring-boot-five-salads.onrender.com/](https://spring-boot-five-salads.onrender.com/)
 
 ## Build using:
 - HTML
