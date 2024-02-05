@@ -64,16 +64,23 @@
 			</plugin>
 
 			<plugin>
- 				<groupId>org.apache.maven.plugins</groupId>  
-   				<artifactId>maven-source-plugin</artifactId>         
-     			<executions> 
-      				<execution>
-       					<id>attach-sources</id>
-        				<goals>
-          					<goal>jar</goal>
-        				</goals>
-       				</execution>
-      			</executions>
+				<groupId>com.jolira</groupId>
+				<artifactId>onejar-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<configuration>
+							<mainClass>org.baeldung.executable.
+							ExecutableMavenJar</mainClass>
+							<attachToBuild>true</attachToBuild>
+							<filename>
+							${ecommerce-0.0.1-SNAPSHOT}.${jar}
+							</filename>
+						</configuration>
+						<goals>
+							<goal>one-jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
