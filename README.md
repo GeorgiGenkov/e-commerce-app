@@ -1,6 +1,10 @@
 # E-COMMERCE-APP: FIVE SALADS
 Responsive web application for food purchase and delivery with an option for account registration. 
 
+## Link
+Link to the web application:
+[Link text](https://spring-boot-five-salads.onrender.com/)
+
 ## Build using:
 - HTML
 - CSS
@@ -14,34 +18,34 @@ Responsive web application for food purchase and delivery with an option for acc
 
 ## Details:
 ### The home page contains navigation bar, salads information sections, shopping cart, payment form, footer:
-- navigation bar
+- navigation bar <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_navbar.jpeg)
 
-- salads information
+- salads information <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_salad_info.jpg)
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_salad_ingredients.jpg)
 
-- shopping car
+- shopping car <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_shopping_cart.jpg)
 
-- payment form
+- payment form <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_payment_form.jpg)
 
-- footer
+- footer <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_footer.jpg)
 
 
 ### Sign up/Sign in page:
-- sign in
+- sign in <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_sign_in.jpg)
 
-- sign up
+- sign up <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_sign_up.jpg)
 
 
 ### Responsive design:
-- home page
+- home page <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_responsive_home_page.jpg)
 
-- sign in/up
+- sign in/up <br />
 ![Screenshot](/app/src/main/resources/static/assets/screenshots_for_readme/screenshot_responsive_registration_page.jpg)
