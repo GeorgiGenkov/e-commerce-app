@@ -783,6 +783,7 @@ footer {
   .username {
     position: absolute;
     top: 0px;
+    font-size: 20px;
   }
 
   .slider {
@@ -811,25 +812,25 @@ footer {
 
   .buy-button {
     top: unset;
-    font-size: 18px;
+    font-size: 25px;
     right: 0;
   }
 
   .buy-button:hover {
-    color: rgba(0, 0, 0, 0.852);
-    background-color: rgba(66, 210, 33, 0.81);
+    color: #fff;
+    background-color: #111;
   }
 
   .ingredients-button {
     top: unset;
-    font-size: 18px;
+    font-size: 25px;
     right: unset;
     left: 0;
   }
 
   .ingredients-button:hover {
-    color: rgba(0, 0, 0, 0.852);
-    background-color: rgba(66, 210, 33, 0.81);
+    color: #fff;
+    background-color: #111;
   }
 
   .features {
