@@ -2,8 +2,12 @@
 Responsive web application for food purchase and delivery with an option for account registration. 
 
 ## Link
-Link to the web application:
+### Link to the web application hosted on render.com:
 [https://spring-boot-five-salads.onrender.com/](https://spring-boot-five-salads.onrender.com/)
+
+### Link to the web application hosted on railway.app:
+[https://e-commerce-app-production-3803.up.railway.app/](https://e-commerce-app-production-3803.up.railway.app/)
+
 
 ## Build using:
 - HTML
