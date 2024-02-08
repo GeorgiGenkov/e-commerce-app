@@ -11,6 +11,7 @@ Link to the web application:
 - JavaScript
 - Java
 <br />
+
 - Maven
 - Spring Boot + Spring Security
 - Thymeleaf

@@ -1,0 +1,12 @@
+{
+  "name": "e-commerce-app",
+  "version": "1.0.0",
+  "description": "Responsive web application for food purchase and delivery with an option for account registration.",
+  "main": "app/src/resources/templates/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
