@@ -1,7 +1,7 @@
 # E-COMMERCE-APP: FIVE SALADS
 Responsive web application for food purchase and delivery with an option for account registration. 
 
-## Link
+## Links:
 ### Link 1 (Recommended):
 Link to the web application hosted on railway.app:
 [https://e-commerce-app-production-3803.up.railway.app/](https://e-commerce-app-production-3803.up.railway.app/)
