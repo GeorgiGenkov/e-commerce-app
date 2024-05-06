@@ -5,7 +5,7 @@ Users are able to register, sign in, add products to the cart, remove products f
 ## Deployed:
 ### Link 1 (Recommended):
 Link to the web application hosted on railway.app:
-[https://e-commerce-app-production-3803.up.railway.app/](https://e-commerce-app-production-3803.up.railway.app/)
+[https://e-commerce-app-production-9d4d.up.railway.app/](https://e-commerce-app-production-9d4d.up.railway.app/)
 
 ### Link 2 (Long initial loading time - up to 4 minutes):
 Link to the web application hosted on render.com:
