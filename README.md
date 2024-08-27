@@ -3,8 +3,11 @@ Responsive web application for food purchase and delivery.
 Users are able to register, sign in, add products to the cart, remove products from the cart, navigate through the home page.
 
 ## Deployed:
+### Link 1 (Recommended):
+Link to the web application hosted on railway.app:
+[https://e-commerce-app-production-3282.up.railway.app/](https://e-commerce-app-production-3282.up.railway.app/)
 
-### Link 1 (Long initial loading time - up to 4 minutes):
+### Link 2 (Long initial loading time - up to 4 minutes):
 Link to the web application hosted on render.com:
 [https://spring-boot-five-salads.onrender.com/](https://spring-boot-five-salads.onrender.com/)
 
